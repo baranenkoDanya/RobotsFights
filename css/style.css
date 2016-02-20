@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+header,
+footer {
+    background: #101826;
+}
+
+header {
+    overflow: hidden;
+    width: 100%;
+    height: 27%;
+    height: inherit;
+    position: fixed;
+    float: top;    
+    display: block;
+}
+
+#fight {
+    font-size: 4vw;
+    float: right;
+    font-family: 'Monoton', cursive;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 0 40px #CFB980, 0 0 30px #000066, 0 0 6px #344758;
+    color: ghostwhite;
+    left: 6vw;    
+}
+
+header.sticky {
+    /*height: 55px;*/
+    overflow: hidden;
+    transition: all 0.5s ease;
+    opacity: 0.75;
+    max-height: 25%;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+header.sticky:hover {
+    opacity: 0.99;
+}
+
+header.sticky #top_wrapper {
+    display: inline-block;
+    float: right;
+    overflow: hidden;
+}
+
+header.sticky #text {
+    display: inline;
+    font-size: 3vw;
+    float: center;
+    position: relative;
+    left: 8vw;
+    text-align:center;
+}
+
+header.sticky #fight {
+    display:none;
+}
+
+header.sticky ul#buttons {
+    display: inline-block;
+    position: absolute;
+    top: 1.5vmax;
+    left: 8vw;
+}
+
+header.sticky ul#buttons li{
+    display: inline-block;
+    margin: 0;
+    padding: 5px;
+}
+header.sticky ul#buttons li a{
+    display: inline-block;
+}
+
+header.sticky #logos {
+    display: none;
+}
+
+#text {
+    font-size: 40px;
+    font-family: 'Monoton', cursive;
+    text-align: center;
+    padding-right: 1%;
+    text-transform: uppercase;
+    text-shadow: 0 0 40px #CFB980, 0 0 30px #000066, 0 0 6px #344758;
+    font-stretch: ultra-condensed;
+    color: yellow;
+}
+
+#text:hover {
+    text-shadow: 0 0 100px black, 0 0 40px #000066, 0 0 8px #101826;
+    text-align: center;
+}
+
+#text span {
+    animation: upper 9s linear infinite;
+}
+
+#top_wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+#logos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30vw;
+    float: left;
+    text-align: left;
+}
+
+#logos a {
+    margin: 1vmin;
+    padding: 0;
+    display: inline-block;
+}
+
+#logos a img {
+    margin: 0;
+    padding: 0;
+    width: 9vw;
+    height: 9vw;
+    max-width: 90px;
+    max-height: 90px;
+    height: auto;
+}
+
+ul#buttons {  
+    padding-bottom: 2vmin;
+}
+
+@keyframes upper {
+    0%,
+    19.999%,
+    22%,
+    62.999%,
+    64%,
+    64.999%,
+    70%,
+    100% {
+        opacity: .99;
+        text-shadow: 0 0 80px #CFB980, 0 0 30px #344758, 0 0 6px #101826;
+    }
+    20%,
+    21.999%,
+    63%,
+    63.999%,
+    65%,
+    69.999% {
+        opacity: 0.4;
+        text-shadow: none;
+    }
+}
+
+a,
+h1 {
+    color: white;
+}
+
+header ul {
+    clear: both;
+    text-align: center;
+}
+
+li{
+    display: inline;
+    padding: 0px 10px 0px 10px;
+}
+
+header h1, h2 {
+    text-align: center;
+    width: 70%;
+    font-size: 75px;
+    float: right;
+}
+
+img:nth-child(2) {
+    vertical-align: top;
+    display: inline-block;
+}
+
+img:first-child {
+    vertical-align: bottom;
+}
+
+#btn{
+    border-radius: 7px;
+    border: 2px solid white;
+    padding: 5px;
+    text-decoration: none;
+    display: inline-block;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: -webkit-transform;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+#btn:hover {
+    border-color: yellow;
+    color: white;
+    opacity: none;
+    transition: all 0.3s;
+}
+
+.picture {
+    border: none;
+}
+
+#video {
+    width: 100%;
+    margin: 0 auto;
+    background: white;
+    padding-top: 200px;    
+}
+
+#video h1 {
+    color: black;
+    font-size: 60px;
+    font-family: 'Didact Gothic', sans-serif;
+    text-align: center;    
+}
+
+#rules h1{
+    text-align: left;
+}
+
+footer {
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
+footer ul li{
+    display: block;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 0 0 150px ghostwhite;
+    font-size: 1vw;    
+}
+
+#video iframe {
+    margin: 5% auto;
+    display: block;
+    margin-bottom: 2%;
+}
+
+#rules ul li {
+    display: block;
+    text-align: left;
+    margin-left: 5%;
+}
+
+#rules {
+    margin: 0 auto;
+    width: 100%;
+    background: #273748;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    color: #fdffff;
+    text-shadow: 0 0 100px grey;
+    color:ghostwhite;
+    text-align: center;
+}
+
+
+main h2 {
+    text-align: center;
+}
+
+iframe {
+    border-radius: 15px;
+    margin: 5% auto;
+    margin-left: 5%;
+    box-shadow: 0 0 30px black;
+}
+
+/*sass variables used*/
+$full:100%;
+$auto:0 auto;
+$align:center;
+
+@mixin disable{
+  outline:none;
+  border:none;
+}
+
+@mixin easeme{
+  -webkit-transition:1s ease;
+  -moz-transition:1s ease;
+  -o-transition:1s ease;
+  -ms-transition:1s ease;
+  transition:1s ease;
+}
+
+/*site container*/
+.wrapper{
+    width:50%;
+    margin:$auto;
+    margin: 0 auto;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: %;
+}
+
+#h1reg{
+   color: black;
+    text-align:$align;
+    padding:30px 0px 0px 0px;
+    font:25px Oswald;
+    text-transform: uppercase;
+    text-align: center;
+    margin:0px;
+    margin-bottom: 10px;
+}
+
+#preg{
+    font:15px Open Sans;  
+    margin-bottom:30px;
+    text-align: center;
+}
+
+.form{
+    width:$full;
+    margin-bottom: 20px;
+}
+
+#submit {
+    display: inline-block;    
+    width:100%;
+    padding:15px;
+    border-radius:5px;
+    @include disable;
+    background: yellow;
+    font:16px Oswald;
+    font-weight: 900;
+    color: black;
+    text-transform:uppercase;
+    text-shadow: 2px 2px 5px grey;
+    text-decoration: none;
+    text-align: center;
+    border:1px solid #000;    
+    opacity:0.8;
+	-webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.7);
+	box-shadow: 0 8px 6px -6px rgba(0,0,0,0.7);
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent),       to(rgba(255,255,255,0.2)));
+}
+
+#submit:hover{
+    opacity:1;
+    cursor:pointer;    
+    transition: all 0.3s;
+}
